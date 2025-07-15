@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -34,12 +35,12 @@ export default function Home() {
           >
             Download Resume
           </a>
-          <a
-            href="/portfolio/projects"
+          <Link
+            to="/projects"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-semibold transition"
           >
             View My Projects
-          </a>
+          </Link>
         </div>
       </div>
     </motion.section>

@@ -10,7 +10,7 @@ export default function Projects() {
     {
       title: "Team Management Dashboard",
       description:
-        "A responsive dashboard for managing team members with features like user addition, editing, deletion, filtering, and role/status visualization using pie charts.",
+        "A modern admin dashboard that lets users manage team members with role-based views, charts, and real-time filtering.",
       skills: ["React", "Tailwind CSS", "Tanstack Table", "Chart.js"],
       link: "https://iamtommyzombie.github.io/team-dashboard/",
       image: dashboard,
@@ -18,29 +18,32 @@ export default function Projects() {
     {
       title: "Job Posting Board",
       description:
-        "A platform for browsing and posting job listings, designed with a focus on clean UI and user-friendly navigation.",
+        "A clean and intuitive platform for browsing and posting job listings with a focus on UX.",
       skills: ["React", "Tailwind CSS"],
       link: "https://iamtommyzombie.github.io/job-board-ui",
       image: jobboard,
     },
     {
       title: "SaaSy",
-      description: "A placeholder for upcoming UI/UX projects to be added.",
-      skills: ["TBD"],
+      description:
+        "A slick, animated landing page template for the product 'SaaSy', built to highlight key features and conversions.",
+      skills: ["React", "Tailwind CSS", "Framer Motion"],
       link: "https://iamtommyzombie.github.io/saas-landing-page/",
       image: saasy,
     },
     {
       title: "Haircut Booking",
-      description: "A placeholder for upcoming UI/UX projects to be added.",
-      skills: ["TBD"],
+      description:
+        "A responsive appointment scheduling UI designed for salons or barbershops with a clean, mobile-first layout.",
+      skills: ["React", "Tailwind CSS"],
       link: "https://iamtommyzombie.github.io/haircut-booking/",
       image: haircut,
     },
     {
       title: "Music Store",
-      description: "A placeholder for upcoming UI/UX projects to be added.",
-      skills: ["TBD"],
+      description:
+        "An e-commerce concept for selling musical instruments with a product-focused layout and smooth navigation.",
+      skills: ["React", "Tailwind CSS"],
       link: "https://iamtommyzombie.github.io/music-store/",
       image: musicStore,
     },

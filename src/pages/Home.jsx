@@ -27,14 +27,15 @@ export default function Home() {
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="/resume.pdf"
-            download
+            href="/portfolio/ThomasScalesResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-semibold transition"
           >
             Download Resume
           </a>
           <a
-            href="/projects"
+            href="/portfolio/projects"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-semibold transition"
           >
             View My Projects

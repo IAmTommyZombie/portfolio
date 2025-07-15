@@ -30,15 +30,6 @@ export default function Footer() {
               ThomasScales1@gmail.com
             </a>
           </p>
-          <p>
-            Phone:{" "}
-            <a
-              href="tel:+3392241974"
-              className="hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              +1 (339) 224-1974
-            </a>
-          </p>
         </div>
         <p className="text-gray-500 dark:text-gray-500 text-xs mt-4">
           &copy; {new Date().getFullYear()} Thomas Scales. All rights reserved.

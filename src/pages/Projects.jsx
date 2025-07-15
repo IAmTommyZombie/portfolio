@@ -1,4 +1,9 @@
 import { motion } from "framer-motion";
+import saasy from "../assets/sassy.png";
+import dashboard from "../assets/dashboard.png";
+import jobboard from "../assets/jobboard.png";
+import musicStore from "../assets/musicStore.png";
+import haircut from "../assets/haircut.png";
 
 export default function Projects() {
   const projects = [
@@ -7,23 +12,37 @@ export default function Projects() {
       description:
         "A responsive dashboard for managing team members with features like user addition, editing, deletion, filtering, and role/status visualization using pie charts.",
       skills: ["React", "Tailwind CSS", "Tanstack Table", "Chart.js"],
-      link: "https://yourusername.github.io/team-dashboard",
-      image: "https://via.placeholder.com/600x400?text=Team+Dashboard",
+      link: "https://iamtommyzombie.github.io/team-dashboard/",
+      image: dashboard,
     },
     {
       title: "Job Posting Board",
       description:
         "A platform for browsing and posting job listings, designed with a focus on clean UI and user-friendly navigation.",
       skills: ["React", "Tailwind CSS"],
-      link: "https://yourusername.github.io/job-board",
-      image: "https://via.placeholder.com/600x400?text=Job+Board",
+      link: "https://iamtommyzombie.github.io/job-board-ui",
+      image: jobboard,
     },
     {
-      title: "Future Project",
+      title: "SaaSy",
       description: "A placeholder for upcoming UI/UX projects to be added.",
       skills: ["TBD"],
-      link: "#",
-      image: "https://via.placeholder.com/600x400?text=Future+Project",
+      link: "https://iamtommyzombie.github.io/saas-landing-page/",
+      image: saasy,
+    },
+    {
+      title: "Haircut Booking",
+      description: "A placeholder for upcoming UI/UX projects to be added.",
+      skills: ["TBD"],
+      link: "https://iamtommyzombie.github.io/haircut-booking/",
+      image: haircut,
+    },
+    {
+      title: "Music Store",
+      description: "A placeholder for upcoming UI/UX projects to be added.",
+      skills: ["TBD"],
+      link: "https://iamtommyzombie.github.io/music-store/",
+      image: musicStore,
     },
   ];
 
@@ -76,11 +95,15 @@ export default function Projects() {
               variants={item}
               className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 animate-fade-in"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative w-full aspect-[4/3] overflow-hidden group">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  draggable={false}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 pointer-events-none rounded-t-lg"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-20 transition duration-300 rounded-t-lg" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {project.title}
@@ -95,17 +118,7 @@ export default function Projects() {
                   className="flex flex-wrap gap-2 mb-4"
                   role="list"
                   aria-label={`Skills for ${project.title}`}
-                >
-                  {project.skills.map((skill, skillIndex) => (
-                    <motion.span
-                      key={skillIndex}
-                      variants={skillItem}
-                      className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm px-3 py-1 text-sm font-medium text-gray-900 dark:text-gray-100 hover:bg-blue-50 dark:hover:bg-blue-900 transition"
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </motion.div>
+                ></motion.div>
                 <a
                   href={project.link}
                   className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm font-semibold transition"
